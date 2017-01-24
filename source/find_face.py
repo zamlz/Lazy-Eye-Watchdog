@@ -159,8 +159,8 @@ def findEyes(face, gray, color):
 
 
     # Outline averaged eyes
-    cv2.rectangle(color, (eyeL[0], eyeL[1]), (eyeL[0] + eyeL[2], eyeL[1] + eyeL[2]), (255, 255, 255), 2)
-    cv2.rectangle(color, (eyeR[0], eyeR[1]), (eyeR[0] + eyeR[2], eyeR[1] + eyeR[2]), (255, 255, 255), 2)
+    cv2.rectangle(color, (eyeL[0], eyeL[1]), (eyeL[0] + eyeL[2], eyeL[1] + eyeL[3]), (255, 255, 255), 2)
+    cv2.rectangle(color, (eyeR[0], eyeR[1]), (eyeR[0] + eyeR[2], eyeR[1] + eyeR[3]), (255, 255, 255), 2)
 
     # (x, y, w, h)
     return (
