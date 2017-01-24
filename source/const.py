@@ -49,7 +49,7 @@ IMAGE_PATH = '../test_data/new_set/'
 LAZY_FLAG = ['lazy0', 'lazy1', 'lazy2']
 GLASSES_FLAG = ['noGlasses']
 DIRECTION_FLAG = ['left', 'right', 'straight']
-TESTING_BOXES = False
+TESTING_BOXES = True
 
 # Classifiers
 # These are currently all provided by opencv
@@ -75,11 +75,13 @@ EYE_SCALE_FACTOR = 1.1
 EYE_MIN_NEIGHBORS = 5
 
 # Facial Detection Patches
-FACE_IGNORE_LINE = 0.55
 EYE_BOX_SEPARATION_THRESHOLD = 0.75
+FACE_IGNORE_LINE_TOP = 0.55
+FACE_IGNORE_LINE_BOT = 0.7
 
 # Eye to Face Ratios
 FACE_TO_EYE_RATIO = 6
+
 
 #######################
 # Live Video Tracking

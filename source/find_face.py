@@ -138,7 +138,7 @@ def findEyes(face, gray, color):
         )
         for box in features:
             bx, by, bw, bh = box
-            if by < h * const.FACE_IGNORE_LINE:
+            if by < h * const.FACE_IGNORE_LINE_TOP and by+bh < h * const.FACE_IGNORE_LINE_BOT:
                 eyeList.append(box)
                 # Outline box
                 if const.TESTING_BOXES:
